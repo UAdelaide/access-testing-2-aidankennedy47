@@ -23,5 +23,6 @@ CREATE TABLE Location(
 );
 
 CREATE TABLE BOOKINFO(
-    B
+    BookInfoID int NOT NULL AUTO_INCREMENT,
+    
 )
