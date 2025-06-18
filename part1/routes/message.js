@@ -3,6 +3,6 @@ var router = express.Router();
 var db = require('../db');
 
 router.get('/select', async (req, res) => {
-db.query()
+db.query(`SELECT`)
 
 });
