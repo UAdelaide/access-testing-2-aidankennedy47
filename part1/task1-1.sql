@@ -7,7 +7,7 @@ CREATE TABLE 'User';
 'name' VARCHAR(100) NOT NULL,
 'email' VARCHAR(100) NOT NULL,
 'password' VARCHAR(100) NOT NULL,
-'location_id' int NOT NULL
+'location_id' int NOT NUL
 
 
 CREATE TABLE
