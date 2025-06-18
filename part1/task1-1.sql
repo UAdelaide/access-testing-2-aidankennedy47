@@ -1,3 +1,4 @@
+DROP DATABASE IF 
 CREATE DATABASE Marketplace;
 
 USE Marketplace;
