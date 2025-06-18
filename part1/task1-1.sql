@@ -9,7 +9,8 @@ email VARCHAR(100) NOT NULL,
 `password` VARCHAR(100) NOT NULL,
 location_id int DEFAULT NULL,
 PRIMARY KEY (UserID),
-UNIQUE KEY (email)
+UNIQUE KEY (email),
+FOREIGN KEY (location_id) REFERENCES Locations(Location)
 );
 
 
