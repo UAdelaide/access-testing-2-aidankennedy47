@@ -4,7 +4,8 @@ USE 'Marketplace';
 
 CREATE TABLE 'User';
 'UserID' int NOT NULL AUTO_INCREMENT,
-'name' VARCHAR(100) DEFAULT '',
+'name' VARCHAR(100) NOT NULL,
+'email' VARCHAR(100) NOT NULL,
 
 
 
