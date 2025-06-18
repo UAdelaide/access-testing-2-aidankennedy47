@@ -32,7 +32,7 @@ CREATE TABLE BookInfo(
 CREATE TABLE BookListings(
     BookID INT NOT NULL AUTO_INCREMENT,
     ListingDate DATETIME NOT NULL,
-    Price float NOT NULL,
+    Price FLOAT NOT NULL,
     PRIMARY KEY (BookID),
     FOREIGN KEY (BookInfoID) REFERENCES BookInfo(BookInfoID),
     FOREIGN KEY (SellerID) REFERENCES User(UserID)
