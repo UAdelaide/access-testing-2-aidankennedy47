@@ -1,5 +1,7 @@
 CREATE DATABASE Marketplace;
 
+USE 'Marketplace';
+
 CREATE TABLE User;
 
-CREATE TABLE 
+CREATE TABLE
