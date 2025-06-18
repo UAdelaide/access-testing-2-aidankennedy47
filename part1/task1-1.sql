@@ -2,6 +2,14 @@ CREATE DATABASE Marketplace;
 
 USE Marketplace;
 
+CREATE TABLE Location(
+    LocationID int NOT NULL AUTO_INCREMENT,
+    City VARCHAR(100) NOT NULL,
+    State VARCHAR(100) NOT NULL,
+    Country VARCHAR(100) NOT NULL,
+    PRIMARY KEY (LocationID)
+);
+
 CREATE TABLE User(
 UserID int NOT NULL AUTO_INCREMENT,
 name VARCHAR(100) NOT NULL,
@@ -11,15 +19,6 @@ locationID int DEFAULT NULL,
 PRIMARY KEY (UserID),
 UNIQUE KEY (email),
 FOREIGN KEY (locationID) REFERENCES Locations(LocationID)
-);
-
-
-CREATE TABLE Location(
-    LocationID int NOT NULL AUTO_INCREMENT,
-    City VARCHAR(100) NOT NULL,
-    State VARCHAR(100) NOT NULL,
-    Country VARCHAR(100) NOT NULL,
-    PRIMARY KEY (LocationID)
 );
 
 CREATE TABLE BookInfo(
