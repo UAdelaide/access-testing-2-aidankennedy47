@@ -52,4 +52,4 @@ CREATE TABLE Purchases(
 );
 
 INSERT INTO Location(City, State, Country)
-VALUES
+VALUES (Adelaide, SA, Australia)
