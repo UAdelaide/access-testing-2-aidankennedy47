@@ -22,10 +22,14 @@ CREATE TABLE Location(
     PRIMARY KEY (LocationID)
 );
 
-CREATE TABLE BOOKINFO(
+CREATE TABLE BookInfo(
     BookInfoID int NOT NULL AUTO_INCREMENT,
     Title VARCHAR(100) NOT NULL,
     Author VARCHAR(100) NOT NULL,
     ISBN VARCHAR(100) NOT NULL,
-    PRIMARY KEY ()
+    PRIMARY KEY (BookInfoID)
+);
+
+CREATE TABLE BookListings(
+    
 )
