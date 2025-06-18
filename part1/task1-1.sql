@@ -54,4 +54,4 @@ CREATE TABLE Purchases(
 INSERT INTO Location(City, State, Country)
 VALUES (Adelaide, SA, Australia);
 
-INSERT INTO User ()
+INSERT INTO User (name, email, password)
