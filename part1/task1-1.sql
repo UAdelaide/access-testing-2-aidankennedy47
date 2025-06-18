@@ -19,4 +19,7 @@ CREATE TABLE Location(
     City VARCHAR(100) NOT NULL,
     State VARCHAR(100) NOT NULL,
     Country VARCHAR(100) NOT NULL,
-)
+    PRIMARY KEY (LocationID)
+);
+
+CREATE TABLE
