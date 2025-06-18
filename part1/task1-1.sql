@@ -44,7 +44,7 @@ CREATE TABLE BookListings(
 DROP TABLE IF EXISTS Purchases;
 CREATE TABLE Purchases(
     PurchaseID INT AUTO_INCREMENT PRIMARY KEY,
-    PurchaseDate DATETIME NOT NULL,
+    PurchaseDate DATE NOT NULL,
     BuyerID INT NOT NULL,
     BookID INT NOT NULL,
     FOREIGN KEY (BuyerID) REFERENCES User(UserID),
