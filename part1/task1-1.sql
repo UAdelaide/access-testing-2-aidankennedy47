@@ -32,16 +32,16 @@ CREATE TABLE BookInfo(
 
 CREATE TABLE BookListings(
     BookID int NOT NULL AUTO_INCREMENT,
-    ListingDate int NOT NULL,
+    ListingDate DATE NOT NULL,
     Price float NOT NULL,
     PRIMARY KEY (BookID),
     FOREIGN KEY (BookInfoID) REFERENCES BookInfo(BookInfoID),
-    FOREIGN KEY (SellerID) REFERENCES Users(UserID)
+    FOREIGN KEY (SellerID) REFERENCES User(UserID)
 );
 
 CREATE TABLE Purchases(
     PurchaseID int NOT NULL AUTO_INCREMENT,
-    PurchaseDate int NOT NULL,
+    PurchaseDate DATETIME NOT NULL,
     FOREIGN KEY (BuyerID) REFERENCES User(UserID),
     FOREIGN KEY (BookID) REFERENCES BookListings(BookID)
 );
