@@ -9,7 +9,8 @@ CREATE TABLE 'User';
 'password' VARCHAR(100) NOT NULL,
 'location_id' int DEFAULT NULL,
 PRIMARY KEY ('UserID'),
-
+UNIQUE KEY 'email' ('email'),
+UNIQUE KEY 
 
 
 CREATE TABLE
