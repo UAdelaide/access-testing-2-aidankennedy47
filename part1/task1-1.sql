@@ -40,5 +40,6 @@ CREATE TABLE BookListings(
 );
 
 CREATE TABLE Purchases(
-    
+    PurchaseID int NOT NULL AUTO_INCREMENT,
+    FOREIGN KEY 
 )
