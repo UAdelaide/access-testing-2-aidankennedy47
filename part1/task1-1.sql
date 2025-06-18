@@ -43,6 +43,8 @@ CREATE TABLE BookListings(
 CREATE TABLE Purchases(
     PurchaseID INT NOT NULL AUTO_INCREMENT,
     PurchaseDate DATETIME NOT NULL,
+    BuyerID INT NOT NULL,
+    BookID INT NOT NULL,
     FOREIGN KEY (BuyerID) REFERENCES User(UserID),
     FOREIGN KEY (BookID) REFERENCES BookListings(BookID)
 );
