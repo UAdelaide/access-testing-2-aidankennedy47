@@ -4,6 +4,7 @@ USE 'Marketplace';
 
 CREATE TABLE 'User';
 'UserID' int NOT NULL AUTO_INCREMENT,
+'' int DEFAULT NULL,
 
 
 CREATE TABLE
