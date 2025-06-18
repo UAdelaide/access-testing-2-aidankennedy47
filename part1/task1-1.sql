@@ -35,5 +35,5 @@ CREATE TABLE BookListings(
     Author VARCHAR(100) NOT NULL,
     ISBN VARCHAR(100) NOT NULL,
     PRIMARY KEY (BookID),
-    FOREIGN KEY ()
+    FOREIGN KEY (BookInfoID) REFERENCES BookInfo(BookInfoID)
 )
