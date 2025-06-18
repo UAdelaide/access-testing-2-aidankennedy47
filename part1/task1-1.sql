@@ -3,6 +3,7 @@ CREATE DATABASE 'Marketplace';
 USE 'Marketplace';
 
 CREATE TABLE 'User';
+'UserID' int NOT NULL AUTO_INCREMENT,
 
 
 CREATE TABLE
