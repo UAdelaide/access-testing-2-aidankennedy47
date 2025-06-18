@@ -14,4 +14,7 @@ FOREIGN KEY (locationID) REFERENCES Locations(LocationID)
 );
 
 
-CREATE TABLE
+CREATE TABLE Location(
+    LocationID int NOT NULL AUTO_INCREMENT,
+    City VARCHAR(100)
+)
