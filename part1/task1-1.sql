@@ -36,5 +36,9 @@ CREATE TABLE BookListings(
     Price float NOT NULL,
     PRIMARY KEY (BookID),
     FOREIGN KEY (BookInfoID) REFERENCES BookInfo(BookInfoID),
-    FOREIGN KEY (SellerID) REFERENCES Users()
+    FOREIGN KEY (SellerID) REFERENCES Users(UserID)
 );
+
+CREATE TABLE Purchases(
+    
+)
