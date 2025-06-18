@@ -41,5 +41,6 @@ CREATE TABLE BookListings(
 
 CREATE TABLE Purchases(
     PurchaseID int NOT NULL AUTO_INCREMENT,
-    FOREIGN KEY (BuyerID) REFERENCES User(UserID)
+    FOREIGN KEY (BuyerID) REFERENCES User(UserID),
+    FOREIGN KEY (BookID) REFERENCES BookListings(BookID)
 )
