@@ -8,7 +8,8 @@ CREATE TABLE 'User';
 'email' VARCHAR(100) NOT NULL,
 'password' VARCHAR(100) NOT NULL,
 'location_id' int DEFAULT NULL,
-PRIMARY KEY ('UserID')
+PRIMARY KEY ('UserID'),
+
 
 
 CREATE TABLE
