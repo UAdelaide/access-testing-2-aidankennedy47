@@ -2,7 +2,7 @@ CREATE DATABASE 'Marketplace';
 
 USE 'Marketplace';
 
-CREATE TABLE 'User';
+CREATE TABLE 'User'(
 'UserID' int NOT NULL AUTO_INCREMENT,
 'name' VARCHAR(100) NOT NULL,
 'email' VARCHAR(100) NOT NULL,
@@ -10,6 +10,7 @@ CREATE TABLE 'User';
 'location_id' int DEFAULT NULL,
 PRIMARY KEY ('UserID'),
 UNIQUE KEY 'email' ('email')
+);
 
 
 CREATE TABLE
