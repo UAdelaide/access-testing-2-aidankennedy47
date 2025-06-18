@@ -55,3 +55,4 @@ INSERT INTO Location(City, State, Country)
 VALUES (Adelaide, SA, Australia);
 
 INSERT INTO User (name, email, password)
+VALUES ('Aidan', 'aidankennedy47@gmail.com')
