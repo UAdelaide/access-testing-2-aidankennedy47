@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var db = require('../db');
 
-router.get('/items', async (req, res) => {
-
+router.get('/select', async (req, res) => {
+db.query()
 
 });
