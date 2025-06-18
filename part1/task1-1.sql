@@ -51,3 +51,5 @@ CREATE TABLE Purchases(
     FOREIGN KEY (BookID) REFERENCES BookListings(BookID)
 );
 
+INSERT INTO Location(City, State, Country)
+VALUES
