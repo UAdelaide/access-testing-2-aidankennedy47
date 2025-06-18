@@ -16,5 +16,7 @@ FOREIGN KEY (locationID) REFERENCES Locations(LocationID)
 
 CREATE TABLE Location(
     LocationID int NOT NULL AUTO_INCREMENT,
-    City VARCHAR(100)
+    City VARCHAR(100) NOT NULL,
+    State VARCHAR(100) NOT NULL,
+    Country VARCHAR(100) NOT NULL,
 )
