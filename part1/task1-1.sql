@@ -4,13 +4,13 @@ USE Marketplace;
 
 CREATE TABLE User(
 UserID int NOT NULL AUTO_INCREMENT,
-name VARCHAR(100) NOT NULL,
+`name` VARCHAR(100) NOT NULL,
 email VARCHAR(100) NOT NULL,
-`password VARCHAR(100) NOT NULL,
+`password` VARCHAR(100) NOT NULL,
 location_id int DEFAULT NULL,
-PRIMARY KEY ('UserID'),
-UNIQUE KEY 'email' ('email')
+PRIMARY KEY (UserID),
+UNIQUE KEY (email)
 );
 
 
-CREATE TABL
+CREATE TABLE
