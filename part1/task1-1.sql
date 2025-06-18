@@ -60,4 +60,5 @@ VALUES ('Aidan', 'aidankennedy47@gmail.com', 'secretpassword', 1);
 INSERT INTO BookInfo ()
 VALUES ();
 
-INSERT INTO BOok
+INSERT INTO BookListings ()
+VALUES ();
