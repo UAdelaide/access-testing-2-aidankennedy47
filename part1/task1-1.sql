@@ -50,3 +50,4 @@ CREATE TABLE Purchases(
     FOREIGN KEY (BuyerID) REFERENCES User(UserID),
     FOREIGN KEY (BookID) REFERENCES BookListings(BookID)
 );
+
