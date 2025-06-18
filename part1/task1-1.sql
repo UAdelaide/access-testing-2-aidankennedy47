@@ -34,7 +34,7 @@ DROP TABLE IF EXISTS BookListings;
 CREATE TABLE BookListings(
     BookID INT AUTO_INCREMENT PRIMARY KEY,
     ListingDate DATETIME NOT NULL,
-    Price FLOAT NOT NULL,
+    Price DECIMAL(8,2) NOT NULL,
     BookInfoID INT NOT NULL,
     SellerID INT NOT NULL,
     FOREIGN KEY (BookInfoID) REFERENCES BookInfo(BookInfoID),
