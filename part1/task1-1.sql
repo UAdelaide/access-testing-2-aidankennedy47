@@ -22,4 +22,6 @@ CREATE TABLE Location(
     PRIMARY KEY (LocationID)
 );
 
-CREATE TABLE
+CREATE TABLE BOOKINFO(
+    B
+)
