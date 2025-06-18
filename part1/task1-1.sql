@@ -18,7 +18,7 @@ password VARCHAR(100) NOT NULL,
 locationID int DEFAULT NULL,
 PRIMARY KEY (UserID),
 UNIQUE KEY (email),
-FOREIGN KEY (locationID) REFERENCES Locations(LocationID)
+FOREIGN KEY (locationID) REFERENCES Location(LocationID)
 );
 
 CREATE TABLE BookInfo(
