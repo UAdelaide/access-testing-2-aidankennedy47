@@ -56,3 +56,8 @@ VALUES ('Adelaide', 'SA', 'Australia');
 
 INSERT INTO User (name, email, password, locationID)
 VALUES ('Aidan', 'aidankennedy47@gmail.com', 'secretpassword', 1);
+
+INSERT INTO BookInfo ()
+VALUES ();
+
+INSERT INTO BOok
