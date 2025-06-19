@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/posts', function(req, res, next) {
 
-  if('user' in req.session){
+  if ('user' in req.session){
       console.log(req.session.user);
   }
 
