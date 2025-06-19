@@ -73,7 +73,7 @@ router.post('/addpost', function(req, res, next) {
                 // Build & run query
                 let tags = '';
                 for(tag of req.body.tags){
-                    tags += `('${tag}',LAST_INSERT_ID()),`
+                    tags += `('${tag}',LAST_INSERT_ID()),`;
                 }
                 tags = tags.replace(/,$/,'');
                 var query = 'INSERT INTO question_tags (tagname,question) VALUES '+tags+';';
