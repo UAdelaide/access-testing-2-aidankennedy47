@@ -117,6 +117,16 @@ function updatePosts() {
 }
 
 /*
+ * Updates the search term then reloads the posts shown
+ */
+function searchPosts(){
+
+    search = document.getElementById('post-search').value.toUpperCase();
+    updatePosts();
+
+}
+
+/*
  * Loads posts from the server
  * - Send an AJAX GET request to the server
  * - JSON Array of posts sent in response
@@ -129,7 +139,7 @@ function loadPosts() {
 
     // Define function to run on response
     xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             // Parse the JSON and update the posts array
             posts = JSON.parse(this.responseText);
             // Call the updatePosts function to update the page
