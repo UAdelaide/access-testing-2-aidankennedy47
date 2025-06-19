@@ -4,6 +4,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
 var mysql = require('mysql');
+const xss = require('xss-clean');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
