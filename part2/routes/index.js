@@ -58,7 +58,10 @@ router.post('/addpost', function(req, res, next) {
               return;
             }
             var query = `INSERT INTO questions (author,title,content,timestamp) VALUES (?,?,?,NOW());`;
-            connection.query(query, [req.body.author.u_id,req.body.title,req.body.content], function(err, rows, fields) {
+            connection.query(
+              query,
+              [req.body.author.u_id,req.body.title,req.body.content],
+              function(err, rows, fields) {
                 if (err) {
                     res.sendStatus(500);
                     console.log(err);
