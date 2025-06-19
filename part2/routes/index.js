@@ -54,7 +54,7 @@ router.post('/addpost', function(req, res, next) {
         req.pool.getConnection( function(err,connection) {
             if (err) {
               res.sendStatus(500);
-              console.log(err);
+              console.error();
               return;
             }
             var query = `INSERT INTO questions (author,title,content,timestamp) VALUES (?,?,?,NOW());`;
