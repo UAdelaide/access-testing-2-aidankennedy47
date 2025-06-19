@@ -61,7 +61,7 @@ router.post('/addpost', function(req, res, next) {
             connection.query(
               query,
               [req.body.author.u_id,req.body.title,req.body.content],
-              function(err, rows, fields) {
+              function(queryErr, rows, fields) {
                 if (err) {
                     res.sendStatus(500);
                     console.log(err);
