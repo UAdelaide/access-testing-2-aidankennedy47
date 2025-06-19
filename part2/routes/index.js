@@ -51,7 +51,7 @@ router.post('/addpost', function(req, res, next) {
         "tags" in req.body) {
         req.body.author = req.session.user;
 
-        req.pool.getConnection( function(err,connection) {
+        req.pool.getConnection(function(err,connection) {
             if (err) {
               res.sendStatus(500);
               console.error();
@@ -62,7 +62,7 @@ router.post('/addpost', function(req, res, next) {
               query,
               [req.body.author.u_id,req.body.title,req.body.content],
               function(queryErr, rows, fields) {
-                if (err) {
+                if (queryErr) {
                     res.sendStatus(500);
                     console.log(err);
                     connection.release(); // release connection if error
